@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'car-filter',
+    podModulePrefix: 'car-filter/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',

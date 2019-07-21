@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('cars', {path: '/'}, function() {
+    // this.route('index');
+    this.route('car', {path: '/car/:car_make'});
+  });
 });
 
 export default Router;

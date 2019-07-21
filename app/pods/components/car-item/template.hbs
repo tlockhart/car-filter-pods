@@ -1,0 +1,16 @@
+<div class="car-item">
+  <h4 class="car-item-header">Car Item</h4>
+  <ul>
+    <li><p>Car Make: {{@car.make}}</p>
+      {{#if @showFoundMessage}}
+      {{#if this.shouldDisplay}}
+      <span>Found</span>
+      {{/if}}
+      {{/if}}
+    </li>
+    <li><p>Car Model: {{@car.model}}</p></li>
+    <li><p>Car Year: {{@car.year}}</p></li>
+    <li>{{link-to 'Info' 'cars.car' @car.make}}</li>
+    {{!-- <li><LinkTo @route='cars.car' @model={{car_make}}>Info</LinkTo></li> --}}
+  </ul>
+</div>
