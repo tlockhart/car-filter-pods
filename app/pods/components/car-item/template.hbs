@@ -1,11 +1,11 @@
 <div class="car-item">
   <h4 class="car-item-header">Car Item</h4>
   <ul>
-    <li><p>Car Make: {{@car.make}}</p>
+    <li>Car Make: {{@car.make}}
       {{#if @showFoundMessage}}
-      {{#if this.shouldDisplay}}
-      <span>Found</span>
-      {{/if}}
+        {{#if this.shouldDisplay}}
+        <span>Found</span>
+        {{/if}}
       {{/if}}
     </li>
     <li><p>Car Model: {{@car.model}}</p></li>
